@@ -44,7 +44,8 @@ jobs:
            ls -la  
            echo $WELCOME
          scp: |
-           './app.tgz' => ${{ secrets.DOCUMENT_ROOT }}
+           './Marc_Cufi.txt' => /home/totmaquinacendrassos/githubaction/web
          last_ssh: |
            echo $LASTSSH
-           cd ${{ secrets.DOCUMENT_ROOT }}
+           cd /home/totmaquinacendrassos/githubaction/web
+           ls
